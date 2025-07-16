@@ -34,11 +34,11 @@ Frontend: Live Demo (Coming Soon)
     C --> G[eBay API]
     
 ## MVP Scope: Primary Goal
-Upload a photo of a Magic: The Gathering card and get instant identification + pricing with:
-70%+ accuracy for cards in good condition
-<5 second response time for complete identification + pricing
-Pricing from 2-3 major sources (TCGPlayer, eBay, Card Kingdom)
-Simple, intuitive web interface with drag-and-drop upload
+Upload a photo of a Magic: The Gathering card and get instant identification + pricing with:  
+70%+ accuracy for cards in good condition  
+<5 second response time for complete identification + pricing  
+Pricing from 2-3 major sources (TCGPlayer, eBay, Card Kingdom)  
+Simple, intuitive web interface with drag-and-drop upload  
 
 ## Contact
 Developer: Andrew Lyons  
