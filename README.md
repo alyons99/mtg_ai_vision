@@ -9,10 +9,10 @@ Frontend: Live Demo (Coming Soon)
 
 ## Completed Features
 
- Project Setup & Architecture - FastAPI backend, React frontend
- Basic Image Upload - Drag & drop interface with validation
- Database Models - PostgreSQL schema for cards, users, searches
- API Foundation - RESTful endpoints with CORS configuration
+ Project Setup & Architecture - FastAPI backend, React frontend  
+ Basic Image Upload - Drag & drop interface with validation  
+ Database Models - PostgreSQL schema for cards, users, searches  
+ API Foundation - RESTful endpoints with CORS configuration  
 
 ## In Progress
 
