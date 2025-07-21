@@ -4,8 +4,14 @@ from fastapi.responses import JSONResponse
 import uvicorn
 from pathlib import Path
 import os
+from models import create_db_and_tables
 
 app = FastAPI(title="MTG AI Vision", version="0.1")
+
+@app.on_event("startup")
+async def on_startup():
+    """Create database tables on startup"""
+    create_db_and_tables()
 
 app.add_middleware(
     CORSMiddleware,
