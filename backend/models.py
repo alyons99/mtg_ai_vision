@@ -4,14 +4,26 @@ from typing import Optional
 import os
 from dotenv import load_dotenv
 
-class CardSearch():
-    pass
+class CardSearch(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    card_name: str
+    set_name: Optional[str] = None
+    tcg_price: Optional[float] = None
+    ebay_price: Optional[float] = None
+    file_name: str
+    created: datetime = Field(default_factory=datetime.utcnow)
 
-class User():
-    pass
+class User(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    email: str = Field(unique=True)
+    password: str
+    created: datetime = Field(default_factory=datetime.utcnow)
 
-class Favorite():
-    pass
+class Favorite(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    user_id: int = Field(foreign_key="user.id")
+    card_id: int = Field(foreign_key="cardsearch.id")
+    created: datetime = Field(default_factory=datetime.utcnow)
 
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
